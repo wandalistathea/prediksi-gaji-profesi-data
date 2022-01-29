@@ -1,7 +1,7 @@
 category-encoders==2.3.0
 dython==0.6.8
 Flask==1.1.2
-numpy==1.18.5
+numpy==1.17.5
 pandas==1.0.5
 pickleshare==0.7.5
 scikit-learn==1.0.2
