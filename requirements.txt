@@ -1,0 +1,16 @@
+category-encoders==2.3.0
+dython==0.6.8
+Flask==1.1.2
+numpy==1.18.5
+pandas @ file:///C:/ci/pandas_1592833613419/work
+pickleshare==0.7.5
+scikit-learn==1.0.2
+scipy @ file:///C:/ci/scipy_1592916963468/work
+seaborn==0.10.1
+matplotlib @ file:///C:/ci/matplotlib-base_1592837548929/work
+statistics==1.0.3.5
+gunicorn==20.1.0
+Werkzeug==1.0.1
+Jinja2==2.11.2
+itsdangerous==1.1.0
+MarkupSafe==1.1.1

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Prediksi Gaji Profesi Data</title>
+
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='style.css') }}">
+
+  </head>
+
+
+  <body style="text-align: center;">
+    <div class="testbox">
+      <form>
+        <div class="banner">
+          <h1>Hasil Prediksi Gaji</h1>
+        </div>
+        
+        <p>Hasil prediksi gaji Anda per bulan adalah:</p>
+        <br>
+
+        <h2 style="color:#666; font-family: Roboto, Arial, sans-serif; font-size: 40px">Rp {{ data }},-</h2>
+
+        <br>
+
+      	<a style="color:#666; font-family: Roboto, Arial, sans-serif;" 
+      	onMouseOver="this.style.color='#1c87c9'"
+      	onMouseOut="this.style.color='#666'" 
+      	href="/">Kembali ke Halaman Utama</a>
+
+      </form>
+    </div>
+  </body>
+</html>
