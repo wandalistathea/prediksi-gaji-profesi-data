@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Prediksi Gaji Profesi Data</title>
+
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='style.css') }}">
+
+  </head>
+
+
+  <body>
+    <div class="testbox">
+      <form method="POST", action="{{url_for('hasil')}}">
+        <div class="banner">
+          <h1>Prediksi Gaji Profesi Data</h1>
+        </div>
+        
+        <div class="position-item">
+          <div class="item">
+            <p>Nama Profesi Data<span class="required">*</span></p>
+            <select required id="job name" name="job name">
+            	<option value="data analyst">Data Analyst</option>
+              <option value="data engineer">Data Engineer</option>
+              <option value="data scientist">Data Scientist</option>
+            </select>
+          </div>
+
+          <div class="item">
+            <p>Lokasi Perusahaan (Provinsi)<span class="required">*</span></p>
+            <select required id="lokasi" name="lokasi">
+            	<option value="bali">Bali</option>
+              <option value="banten">Banten</option>
+              <option value="diy">DI Yogyakarta</option>
+              <option value="dki jakarta">DKI Jakarta</option>
+              <option value="jawa barat">Jawa Barat</option>
+              <option value="jawa timur">Jawa Timur</option>
+              <option value="kalimantan barat">Kalimantan Barat</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="position-item">
+        	<div class="item">
+	            <p>Industri<span class="required">*</span></p>
+	            <select required id="industri" name="industri">
+	            	<option value="acara">Acara</option>
+	            	<option value="ekonomi">Ekonomi</option>
+	            	<option value="human resources">Human Resources</option>
+	            	<option value="keuangan">Keuangan</option>
+	            	<option value="konstruksi">Konstruksi</option>
+	            	<option value="konsultasi">Konsultasi</option>
+	              <option value="media">Media</option>
+	              <option value="pemasaran & periklanan">Pemasaran & Periklanan</option>
+	              <option value="teknologi informasi dan komunikasi">Teknologi Informasi dan Komunikasi</option>
+                <option value="transportasi">Transportasi</option>
+	            </select>
+	        </div>
+
+          <div class="item">
+            <p>Tingkat Pekerjaan<span class="required">*</span></p>
+            <select required id="tingkat job" name="tingkat job">
+              <option value="0">Magang</option>
+              <option value="1">Tingkat Pemula</option>
+              <option value="2">Asosiasi</option>
+              <option value="3">Senior Tingkat Menengah</option>
+            </select>
+          </div>
+
+        </div>
+        
+        <div class="position-item">
+          <div class="item">
+	          <p>Lama Pengalaman (Tahun)<span class="required">*</span></p>
+	          <input type="text" name="lama pengalaman" placeholder="Isikan hanya angka! (contoh: 1)" required/>
+	        </div>
+
+          <div class="item">
+            <p>Ukuran Perusahaan<span class="required">*</span></p>
+            <select required id="ukuran perusahaan" name="ukuran perusahaan">
+            	<option value="0">1-50 Pekerja</option>
+              <option value="1">51-200 Pekerja</option>
+              <option value="2">201-500 Pekerja</option>
+              <option value="3">501-1.000 Pekerja</option>
+              <option value="4">1.001-5.000 Pekerja</option>
+              <option value="5">>5.000 Pekerja</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="btn-block">
+          <button type="submit" href="/hasil">Prediksi</button>
+        </div>
+
+      </form>
+    </div>
+  </body>
+</html>
