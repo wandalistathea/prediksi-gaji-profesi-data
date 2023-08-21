@@ -1,0 +1,13 @@
+numpy==1.25.2
+pandas==2.0.3
+matplotlib==3.7.1
+seaborn==0.12.2
+category-encoders==2.6.2
+imbalanced-learn==0.11.0
+imblearn==0.0
+scipy==1.11.2
+scikit-learn==1.3.0
+Flask==2.3.2
+Werkzeug==2.3.7
+Jinja2==3.1.2
+gunicorn==21.2.0
